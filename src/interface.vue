@@ -1,24 +1,36 @@
 <template>
-	<input :value="value" @input="handleChange($event.target.value)" />
+  <select-multiple-dropdown :choices="items" :placeholder="'Select modules'" />
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
+<script setup lang="ts">
+import SelectMultipleDropdown from "../../../directus/app/src/interfaces/select-multiple-dropdown/select-multiple-dropdown.vue";
+import { ref } from "vue";
 
-export default defineComponent({
-	props: {
-		value: {
-			type: String,
-			default: null,
-		},
-	},
-	emits: ['input'],
-	setup(props, { emit }) {
-		return { handleChange };
-
-		function handleChange(value: string): void {
-			emit('input', value);
-		}
-	},
-});
+//TODO: get these items dynamically so that as new ones are added they become part of the list. Consider doing this with a custom endpoint, using a core directus service or a Pinia store
+const items = ref([
+  {
+    text: "Content",
+    value: "content",
+  },
+  {
+    text: "Users",
+    value: "users",
+  },
+  {
+    text: "Files",
+    value: "files",
+  },
+  {
+    text: "Insights",
+    value: "insights",
+  },
+  {
+    text: "Documentation",
+    value: "documentation",
+  },
+  {
+    text: "Settings",
+    value: "catalog",
+  },
+]);
 </script>

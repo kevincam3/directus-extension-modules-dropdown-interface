@@ -24,5 +24,9 @@
     "@directus/extensions-sdk": "10.1.9",
     "typescript": "^5.2.2",
     "vue": "^3.3.4"
+  },
+  "dependencies": {
+    "@directus/composables": "^10.1.1",
+    "vue-svg-loader": "^0.16.0"
   }
 }
