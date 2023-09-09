@@ -1,12 +1,13 @@
 {
-  "name": "directus-extension-modules-select-dropdown",
+  "name": "directus-extension-modules-dropdown-interface",
   "description": "Dropdown list of the modules available in the project",
   "icon": "extension",
   "version": "1.0.0",
   "keywords": [
     "directus",
     "directus-extension",
-    "directus-custom-interface"
+    "directus-extension-interface",
+    "directus-extension-modules-dropdown-interface"
   ],
   "type": "module",
   "directus:extension": {
