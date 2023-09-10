@@ -5,7 +5,7 @@ export default defineInterface({
   id: "directus-extension-modules-dropdown-interface",
   name: "Dropdown (Modules)",
   icon: "arrow_right_alt",
-  description: "Dropdown list of the modules available in the project",
+  description: "Dropdown list of all the modules available in the project",
   component: ModulesDropdownComponent,
   types: ["json"],
   hideLabel: false,
