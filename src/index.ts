@@ -2,7 +2,7 @@ import { defineInterface } from "@directus/extensions-sdk";
 import ModulesDropdownComponent from "./interface.vue";
 
 export default defineInterface({
-  id: "modules-select-dropdown",
+  id: "directus-extension-modules-dropdown-interface",
   name: "Dropdown (Modules)",
   icon: "arrow_right_alt",
   description: "Dropdown list of the modules available in the project",
